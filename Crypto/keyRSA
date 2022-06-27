@@ -40,7 +40,22 @@ if yn == 'y':
 else:
     print('See you next time')
     exit(0)
-
 ```
+* Ta thấy được rằng con số ta nhập vào chính là biến user_d và việc ta cần làm là nhập số sao cho `pow(ct,user_d,n) == pow(ct,d,n)` và `user_d != d`
+* Ta tính toán được `user_d = d*d*e` chính là số cần tìm. Giờ chúng ta đi tính d:
+* `x = {p % (n // 2)}` mà n = p*q suy ra x = p vì x/2 > p. Từ đó tính được q = n/x => phi = (p-1)(q-1) => `d = pow(e,-1,phi)`
+* Code một đoạn python đơn giản. Giờ ta chỉ cần kết nối đến sever rồi cop giá trị n và x vào code rồi cop nhanh output.
+``` python
+e = 65537
+n = 1
+x = 1
+p = x
+q = n//p
+phi = (p-1)*(q-1)
+d = pow(e,-1,phi)
+print(d*d*e)
+```
+
+### Flag: FPTUHacking{Y0u_kn0w_t0_CR34t3_y0ur_0wn_k3y!!!}
 
   
