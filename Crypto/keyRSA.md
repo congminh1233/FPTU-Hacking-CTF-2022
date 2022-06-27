@@ -1,8 +1,8 @@
 
 # keyRSA
 
-* Challenge gồm 1 đường dẫn và 1 file source.
-`nc 103.245.249.76 49160`
+* Challenge gồm 1 đường dẫn `nc 103.245.249.76 49160` và 1 file source.
+
 ``` python
 from Crypto.Util.number import bytes_to_long, getPrime
 
